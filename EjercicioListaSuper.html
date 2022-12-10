@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista del Super</title>
+    <style>
+        a{
+            text-decoration: none;
+            color: black;   
+        }
+        a:hover{
+            color: salmon;
+        }
+        .listaSuper{
+            width: 100%;
+            height: 100vh;
+        }
+        .listaCompleta{
+            display: flex;
+            flex-direction: column;
+        }
+        .listaCompleta > li{
+            font-size: 50px;
+            margin-bottom: 50px;
+        }
+        .lista{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .lista li{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            background-color: antiquewhite;
+            justify-content: center;
+        }
+        .lista li a{
+            font-size: 25px;
+            text-align: center;
+        }
+        .lista figure img{
+            width: 100%;
+            border-radius: 8px;
+        }
+
+    </style>
+</head>
+<body>
+    <header></header>
+    <main>
+        <section>
+            <h1 class="title">Lista de Compras para el super!!</h1>
+            <article class="listaSuper">
+                <ul class="listaCompleta">
+                    <li>Frutas</li>
+                    <ol>
+                        <div class="lista listaFrutas">
+                            <li>
+                                <a href="https://www.google.com/search?q=recetas+con+banano&oq=recetas+con+banano&aqs=chrome..69i57.3714j0j1&sourceid=chrome&ie=UTF-8">  
+                                Banano</a>
+                                <figure>
+                                    <img src="./ImagenesSuper/banana.jpg" alt="imagen de banano">
+                                </figure>
+                            </li>
+                            <li>
+                                <a href="https://www.google.com/search?q=recetas+con+manzana&oq=recetas+con+manzana&aqs=chrome..69i57.4067j0j1&sourceid=chrome&ie=UTF-8">Manzana</a>
+                                <figure>
+                                    <img src="./ImagenesSuper/manzana.jpg" alt="imagen de una manzana">
+                                </figure>
+                            </li>
+                        </div>
+                    </ol>
+                    <li>Carnes</li>
+                    <ol>
+                        <div class="lista listaCarnes">
+                            <li>
+                                <a href="https://www.google.com/search?q=recetas+con+pescado&sxsrf=ALiCzsbZMZBuSvbiCbRYCLrZI1mL2E6C8g%3A1670187883537&ei=awuNY-a1IKWDwbkP4aOY6AM&ved=0ahUKEwiml4bc7uD7AhWlQTABHeERBj0Q4dUDCA8&uact=5&oq=recetas+con+pescado&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BAgjECc6BAgAEEM6DQgAEIAEEIcCELEDEBQ6BwgAELEDEEM6CAgAEIAEELEDSgQIQRgASgQIRhgAUABYrB1gqR9oAHABeACAAZ8BiAGgEpIBBDAuMTmYAQCgAQHAAQE&sclient=gws-wiz-serp">Pescado</a>
+                                <figure>
+                                    <img src="./ImagenesSuper/pescado.jpg" alt="imagen de un pescado">
+                                </figure>
+                            </li>
+                            <li>
+                                <a href="https://www.google.com/search?q=recetas+con+res&sxsrf=ALiCzsaylBxoL1GRt-SL4dpDYXnitnA6Uw%3A1670187931861&ei=mwuNY92cNJaXwbkPnsO3SA&ved=0ahUKEwid1ovz7uD7AhWWSzABHZ7hDQkQ4dUDCA8&uact=5&oq=recetas+con+res&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIKCAAQgAQQhwIQFDoKCAAQRxDWBBCwAzoHCAAQsAMQQzoNCAAQ5AIQ1gQQsAMYAToPCC4Q1AIQyAMQsAMQQxgCOgwILhDIAxCwAxBDGAI6BAgAEEM6BAgjECc6CAgAEIAEELEDSgQIQRgASgQIRhgBUPgEWL8TYJAVaAFwAXgAgAFmiAGqB5IBAzkuMZgBAKABAcgBEcABAdoBBggBEAEYCdoBBggCEAEYCA&sclient=gws-wiz-serp">Res</a>
+                                <figure>
+                                <img src="./ImagenesSuper/res.jpg" alt="imagen de carne de RES">
+                                </figure>
+                            </li>
+                        </div>
+                    </ol>
+                    <li>Verduras</li>
+                    <ol>
+                        <div class="lista listaVerduras">
+                            <li>
+                                <a href="https://www.google.com/search?q=limonada&sxsrf=ALiCzsbJev5170EdNaBGZLt5b4k9BLw8QQ%3A1670188470432&ei=tg2NY6yGGuCCwbkPlfeDoAU&ved=0ahUKEwisufPz8OD7AhVgQTABHZX7AFQQ4dUDCA8&uact=5&oq=limonada&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIECC4QQzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDoKCAAQRxDWBBCwAzoHCAAQsAMQQzoECAAQQzoECCMQJzoICAAQgAQQsQM6CggAEIAEEIcCEBQ6BwgjEOoCECc6DAgAEOoCELQCEEMYAToGCCMQJxATOgsILhCDARCxAxCABDoICAAQsQMQgwE6CwgAEIAEELEDEIMBOhEILhCABBCxAxCDARDHARDRAzoFCC4QgAQ6BwguENQCEEM6CAguEIAEENQCOgsILhCABBCxAxDUAkoECEEYAEoECEYYAVCaBFiRMGCdMmgHcAF4A4ABkgGIAeAZkgEEMC4yN5gBAKABAbABFMgBCsABAdoBBggBEAEYAQ&sclient=gws-wiz-serp">Limon</a>
+                                <figure>
+                                    <img src="./ImagenesSuper/limones.jpg" alt="imagen de limones">
+                                </figure>
+                            </li>
+                            <li>
+                                <a href="https://www.google.com/search?q=recetas+con+zanahoria&sxsrf=ALiCzsYp8zMu98IUMLO7BbaqCR8jI3cQtg%3A1670188534290&ei=9g2NY7a3EeOwkvQPm6ybwA8&ved=0ahUKEwi2iq2S8eD7AhVjmIQIHRvWBvgQ4dUDCA8&uact=5&oq=recetas+con+zanahoria&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BAgjECc6CgguEMcBENEDEEM6BAgAEEM6CAgAELEDEIMBOgsIABCABBCxAxCDAToNCAAQgAQQhwIQsQMQFDoICAAQgAQQsQM6CggAEIAEEIcCEBRKBAhBGABKBAhGGABQAFiUIWCpI2gAcAF4AIABfIgBhBKSAQQwLjIxmAEAoAEBwAEB&sclient=gws-wiz-serp">Zanahoria</a>
+                                <figure>
+                                    <img src="./ImagenesSuper/zanahoria.jpg" alt="imagen de una zanahoria">
+                                </figure>
+                            </li>
+                        </div>
+                    </ol>
+                </ul>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
